@@ -1,70 +1,202 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📗 Table of Contents
 
-## Available Scripts
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-In the project directory, you can run:
 
-### `npm start`
+#Math-maigicians
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Create with the aim of mentioning one of the thematics of events that I like the most that is that of the video games and using all my knowledge in the right from the first module of the program microverse to give it form and functionality. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Will have future changes in the next days! 
 
-### `npm test`
+<a name="readme-top"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<div align="center">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <h3 id="title"><b>Math-magicians</b></h3>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+</div>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 📖 Web page for Calculator <a name="about-project"></a>
+> Math magicians
+> This is the second project of the react series im cirruntly in the aim is to use the elements of the react framework to develop a bookstore
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 📖Description <a name="about-project"></a>
+> this is a bookstore amde with react
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Built With <a name="built-with"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-REACT
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Tech Stack <a name="tech-stack"></a>
 
-## Learn More
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">HTML</a></li>
+    <li><a href="https://reactjs.org/">CSS</a></li>
+    <li><a href="https://reactjs.org/">JS(react)</a></li>
+  </ul>
+</details>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Key Features <a name="key-features"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1 Add HTML <br>
+3 Add JS<br> 
+4 add linters<br>
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## 💻 Getting Started <a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+> This is the first step in the creation of my project so there is not much yet, but it will grow!
 
-### Advanced Configuration
+To get a local copy up and running, follow these steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Prerequisites
+
+1 Web browser <br>
+2 Code editor   <br>
+3 git-github<br>
+
+### Setup
+
+Clone this repository to your desired folder:
+
+Use these commands: 
+
+```sh
+  cd my-folder
+  git clone https://github.com/stino-x/Math-MAgicians--Microverse
+```
+--->
+
+### Install
+
+Install this project with:
+
+
+Run command:
+
+```sh
+  cd my-project
+  npm install
+  mpn create-my app react
+```
+--->
+
+### Usage
+
+To run the project, execute the following command:
+
+npm start
+
+### Run tests
+
+Work in progress.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+I use Github pages for the deployment of this web page.
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Iheagwara Augustine**
+
+- GitHub: [@githubhandle](https://github.com/stino-x)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/augustine-iheagwara-644b11228/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] More designs and styles!
+- [ ] Better funcionality.
+- [ ] Javascript format
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome! Will help me a lot to improve my coding skills.
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## ⭐️ Show your support <a name="support"></a>
+
+
+If you like this project just keep an eye on the changes that I will bring over time, having an audience on this journey is enough support!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank to my family and God for the opportunities to always improve despite adversity, my girlfriend and friends for being there for me, and Microverse for providing a platform to achieve this goal. 
+
+There were only a few changes in content and styles from the original design
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## ❓ FAQ <a name="faq"></a>
+
+
+- Will you leave the repo open forever?
+
+  - Yes! until Github ceases to exist.
+
+- Do I need permission from you to use this repo?
+
+  - No, it is completely free for everyone who wants to use it.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

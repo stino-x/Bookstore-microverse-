@@ -22,7 +22,6 @@ export default function Form() {
       BookArray.push(book);
       setBookName('');
       setAuthor('');
-      // console.log(BookArray);
     }
   };
   return (

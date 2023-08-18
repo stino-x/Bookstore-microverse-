@@ -1,4 +1,3 @@
-// import './App.css';
 import {
   Route, RouterProvider, createBrowserRouter, createRoutesFromElements,
 } from 'react-router-dom';
@@ -6,7 +5,6 @@ import BookLayout from './components/BookLayout';
 import { ContextProvider } from './ContextProvider';
 import Form from './components/Form/Form';
 import Books from './components/Book-List/Books';
-// import Books from './components/Books-List/Books.js';
 
 function App() {
   const router = createBrowserRouter(
