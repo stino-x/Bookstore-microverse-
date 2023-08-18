@@ -194,7 +194,7 @@ There were only a few changes in content and styles from the original design
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/stino-x/check-list/blob/main/LICENSE) licensed.
 
 
 
