@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './books.css';
-import SharedStateContext from '../../ContextProvider';
+import PropTypes from 'prop-types';
 
-export default function Books() {
-  const { BookArray } = useContext(SharedStateContext);
+export default function Books({ BookArray }) {
   return (
     <div className="list-container">
       <ul className="Booklist">
@@ -26,3 +25,11 @@ export default function Books() {
     </div>
   );
 }
+Books.propTypes = {
+  BookArray: PropTypes.arrayOf(
+    PropTypes.shape({
+      bookname: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+};

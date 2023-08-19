@@ -1,12 +1,10 @@
-import React, { useContext, useState } from 'react';
-import SharedStateContext from '../../ContextProvider';
+import React from 'react';
 import './form.css';
+import PropTypes from 'prop-types';
 
-export default function Form() {
-  const { BookArray, createBook } = useContext(SharedStateContext);
-  const [Bookname, setBookName] = useState('');
-  const [Author, setAuthor] = useState('');
-
+export default function Form({
+  BookArray, createBook, Bookname, setBookName, Author, setAuthor,
+}) {
   const handleBookname = (event) => {
     setBookName(event.target.value);
   };
@@ -24,6 +22,7 @@ export default function Form() {
       setAuthor('');
     }
   };
+
   return (
     <div className="form-container">
       <form onSubmit={onSubmit}>
@@ -44,6 +43,19 @@ export default function Form() {
         <button type="submit">Submit</button>
       </form>
     </div>
-
   );
 }
+
+Form.propTypes = {
+  BookArray: PropTypes.arrayOf(
+    PropTypes.shape({
+      bookname: PropTypes.string.isRequired,
+      author: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+  createBook: PropTypes.func.isRequired,
+  Bookname: PropTypes.string.isRequired,
+  setBookName: PropTypes.func.isRequired,
+  Author: PropTypes.string.isRequired,
+  setAuthor: PropTypes.func.isRequired,
+};
