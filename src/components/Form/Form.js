@@ -1,11 +1,15 @@
 import React, { useContext, useState } from 'react';
 import './form.css';
+import { useDispatch } from 'react-redux';
+import { nanoid } from 'nanoid';
 import SharedStateContext from '../../ContextProvider';
+import { addBooks } from '../../redux/books/booksSlice';
 
 export default function Form() {
-  const { BookArray, createBook } = useContext(SharedStateContext);
+  const { createBook } = useContext(SharedStateContext);
   const [Bookname, setBookName] = useState('');
   const [Author, setAuthor] = useState('');
+  const dispatch = useDispatch();
 
   const handleBookname = (event) => {
     setBookName(event.target.value);
@@ -18,8 +22,8 @@ export default function Form() {
   const onSubmit = (e) => {
     e.preventDefault();
     if (Bookname && Author !== '') {
-      const book = createBook(Bookname, Author);
-      BookArray.push(book);
+      const book = createBook(Bookname, Author, nanoid());
+      dispatch(addBooks(book));
       setBookName('');
       setAuthor('');
     }

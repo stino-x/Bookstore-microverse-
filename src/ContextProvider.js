@@ -8,8 +8,8 @@ const SharedStateContext = createContext();
 export function ContextProvider({ children }) {
   const [BookArray, setBookArray] = useState([]);
   // console.log(BookArray);
-  function createBook(property1, property2) {
-    return { bookname: property1, author: property2 };
+  function createBook(property1, property2, property3) {
+    return { bookname: property1, author: property2, itemid: property3 };
   }
 
   return (
