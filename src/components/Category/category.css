@@ -9,6 +9,20 @@ body {
   height: auto;
 }
 
+.pp-conatiner {
+  border-radius: 80%;
+  background-color: white;
+  border: 1px solid rgb(172, 170, 170);
+  padding: 1%;
+  position: relative;
+  left: 65%;
+}
+
+.profile-picture {
+  color: #4386bf;
+  border-radius: 50%;
+}
+
 #root {
   display: grid;
   grid-template-rows: auto min-content auto;
@@ -63,7 +77,7 @@ nav ul {
 .categories {
   font-weight: 300;
   position: relative;
-  left: calc(9.1rem - 2.938rem);
+  left: 50%;
 }
 
 .category-status {
