@@ -48,8 +48,6 @@ ul {
   width: 70%;
   border: 2px solid black;
   margin: auto;
-
-  /* min-height: 80vh; */
   flex-direction: column;
 }
 
