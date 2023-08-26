@@ -1,21 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './books.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { displayObject, removeBooks } from '../../redux/books/booksSlice';
+import { deleteBook, fetchBook } from '../../redux/books/booksSlice';
 
 export default function Books() {
   const dispatch = useDispatch();
   const booksstore = useSelector((state) => state.books.books);
-  const displayStorevariables = () => {
-    dispatch(displayObject());
-  };
-  const removeBooksfunc = (id) => {
-    dispatch(removeBooks(id));
+  useEffect(() => {
+    dispatch(fetchBook());
+  }, [dispatch]);
+  const deleteBookfunc = (ID) => {
+    dispatch(deleteBook(ID));
   };
   return (
     <div className="list-container">
       <ul className="Booklist">
-        {Array.isArray(booksstore) ? (
+        {Array.isArray(booksstore) && booksstore.length > 0 ? (
           booksstore.map((book) => (
             <li key={book.itemid} className="book">
               <h3>
@@ -26,11 +26,11 @@ export default function Books() {
                 Author:
                 {book.author}
               </h3>
-              <button type="submit" onClick={() => removeBooksfunc(book.itemid)}>Remove</button>
+              <button type="submit" onClick={() => deleteBookfunc(book.item_id)}>Remove</button>
             </li>
           ))
         ) : (
-          displayStorevariables()
+          <p>No books to display</p>
         )}
       </ul>
     </div>
