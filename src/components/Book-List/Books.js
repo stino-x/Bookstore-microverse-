@@ -17,19 +17,17 @@ export default function Books() {
       <ul className="Booklist">
         {Array.isArray(booksstore) ? (
           booksstore.map((book) => (
-            <>
-              <li key={book.itemid} className="book">
-                <h3>
-                  Title:
-                  {book.title}
-                </h3>
-                <h3>
-                  Author:
-                  {book.author}
-                </h3>
-              </li>
-              <button type="submit" onClick={removeBooksfunc(book.itemid)}>Remove</button>
-            </>
+            <li key={book.itemid} className="book">
+              <h3>
+                Title:
+                {book.title}
+              </h3>
+              <h3>
+                Author:
+                {book.author}
+              </h3>
+              <button type="submit" onClick={() => removeBooksfunc(book.itemid)}>Remove</button>
+            </li>
           ))
         ) : (
           displayStorevariables()

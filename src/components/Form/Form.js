@@ -48,5 +48,10 @@ export default function Form() {
         <button type="submit">Submit</button>
       </form>
     </div>
+    // <form action="" method="post">
+    //   <input type="text" className="form-title" placeholder="Title" />
+    //   <input type="text" className="form-author" placeholder="Author" />
+    //   <input type="button" value="ADD BOOK" />
+    // </form>
   );
 }
