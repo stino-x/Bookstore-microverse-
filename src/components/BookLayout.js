@@ -6,7 +6,6 @@ export default function BookLayout() {
   const location = useLocation();
 
   const isHomeRoute = location.pathname === '/';
-  // const isAboutRoute = location.pathname === '/about';
   return (
     <>
       <nav className={isHomeRoute ? 'books-section' : 'nav-category'}>
