@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './books.css';
-import PropTypes from 'prop-types';
+import SharedStateContext from '../../ContextProvider';
+// import { useSelector } from 'react-redux';
+// import Form from '../Form/Form';
 
-export default function Books({ BookArray }) {
+export default function Books() {
+  const { BookArray } = useContext(SharedStateContext);
   return (
     <div className="list-container">
       <ul className="Booklist">
@@ -25,11 +28,3 @@ export default function Books({ BookArray }) {
     </div>
   );
 }
-Books.propTypes = {
-  BookArray: PropTypes.arrayOf(
-    PropTypes.shape({
-      bookname: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
-};
