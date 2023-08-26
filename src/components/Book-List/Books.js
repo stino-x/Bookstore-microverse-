@@ -1,29 +1,37 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './books.css';
-import SharedStateContext from '../../ContextProvider';
-// import { useSelector } from 'react-redux';
-// import Form from '../Form/Form';
+import { useDispatch, useSelector } from 'react-redux';
+import { displayObject, removeBooks } from '../../redux/books/booksSlice';
 
 export default function Books() {
-  const { BookArray } = useContext(SharedStateContext);
+  const dispatch = useDispatch();
+  const booksstore = useSelector((state) => state.books.books);
+  const displayStorevariables = () => {
+    dispatch(displayObject());
+  };
+  const removeBooksfunc = (id) => {
+    dispatch(removeBooks(id));
+  };
   return (
     <div className="list-container">
       <ul className="Booklist">
-        {BookArray.map((book) => {
-          const { bookname, author } = book;
-          return (
-            <li key={bookname} className="book">
+        {Array.isArray(booksstore) ? (
+          booksstore.map((book) => (
+            <li key={book.itemid} className="book">
               <h3>
                 Title:
-                {bookname}
+                {book.title}
               </h3>
               <h3>
                 Author:
-                {author}
+                {book.author}
               </h3>
+              <button type="submit" onClick={() => removeBooksfunc(book.itemid)}>Remove</button>
             </li>
-          );
-        })}
+          ))
+        ) : (
+          displayStorevariables()
+        )}
       </ul>
     </div>
   );
